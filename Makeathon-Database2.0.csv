@@ -1,0 +1,419 @@
+URL;Summary;Type 
+https://link.springer.com/article/10.1007/s40812-019-00121-1;;Scientific 
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8622357;;Scientific 
+https://iopscience.iop.org/article/10.1088/1742-6596/1402/6/066081/meta;;Scientific 
+;;Scientific 
+https://www.sciencedirect.com/science/article/pii/S2214785322028954;;Scientific 
+https://www.mdpi.com/2227-9717/8/11/1384;"Introduction
+The subject of supply chain management has been subdued to many transformations, being in constant adjustment to changes due to globalization in the world economy and an increasing level of competition.
+It is no longer a secret that a sustainable and performing supply chain management system has a compelling impact in achieving a competitive edge on the market and organizations recognize this aspect.
+Chain management is defined as the management of the organizations’ network involved in providing products and services required by end users.
+It covers everything concerning raw materials and ingredients until the consumption [7]
+Objectives
+The main goal of this paper is to develop a performance evaluation model that links specific problems with the most relevant KPIs for every subsystem of the supply chain management.
+The main goal of this paper is to develop a performance evaluation model that links certain problems that appear in each supply chain management subsystem with the most relevant KPIs for every specified subsystem of the supply chain management
+Methods
+The research is designed into separate steps following a logical structure split into main steps
+These start by researching the existing specialty literature on the subject based on qualitative research from primary and secondary sources.
+With the use of data mining and the MLP algorithm, a list with the most suitable KPIs to be used by an organization is generated, with a trust level learned by the MLP algorithm from the provided data
+Considering all these steps, it was made possible to develop a performance evaluation model for the holistic supply chain management system encompassing the nine subsystems, which provides a clear link between the input issues provided by the user via the GUI and the output KPIs provided by the MLP algorithm via data mining and artificial learning.
+Results
+Coding the Input Values Using Python Script.
+The author-defined Python script was used to provide an understandable coding of the input values for the WEKA software to allow the multilayer perceptron to make predictions for which KPI should be used within an organization.
+The graphic user interface developed is a graphical representation of the top 45 problems from each subsystem, reported by the interviewed persons.
+The problems are classified on subsystems based on the interviewees’ answers of the reported problems.
+As the algorithm is given more time to learn and big data inputs are provided from a larger number of organizations, so will the number of possible issues increase, as will the the number of possible links with different KPIs with a higher degree of accuracy, and this will provide an even better picture of the risks the organization is facing
+Discussion
+It is recommended that every company should measure the five most relevant KPIs of every subsystem
+Measuring these KPIs will improve the supply chain management performance by taking actions in order to avoid future problems, improve existing processes and provide better risk assessment, quicker risk communication, improve risk management and increase the sustainability of the system.
+The most important problems pointed out several times are certain communication issues, such as deficient communication, poor inter-departmental communication, deficient client communication, high focus on reduced costs, untrained workforce and lack of workforce, undefined procedures and documentation and delayed deliveries.
+Some of these problems are pointed out as root causes for specific problems that appear within the supply chain management subsystems.
+It can be concluded that certain problems which have been identified as most occurring can be solved or avoided by linking them to the right KPIs and setting the right objectives, validating, the initial hypothesis through which the main problems of the specific subsystems of the supply chain management system can be solved by implementing the right KPIs and setting the right objectives
+Conclusion
+By means of the mathematical model based on the data-mining multilayer perceptron artificial intelligence algorithm, certain relations and influences of the proposed model between KPIs and diverse problems have been demonstrated and validated.
+
+By means of data mining, the top selected KPIs are linked to certain specified problems and the MLP can predict which KPI should be used based on the identified problems within the organisation.
+
+In order to solve existing problems and identify and communicate risks and to prevent future issues, every problem should be linked to a KPI, an aspect that is demonstrated and validated by means of the data-mining multilayer perceptron machine learning algorithm.
+
+Implementing and monitoring certain KPIs could help to better identify possible risks and issues in the system and help reduce or eliminate these potential risks.
+In order to solve existing problems and identify and communicate risks and to prevent future issues, every problem should be linked to a KPI, an aspect that is demonstrated and validated by means of the data-mining multilayer perceptron machine learning algorithm.
+Specific KPIs that are linked to these problems could prevent their appearance by observing the trend line of the monitored KPIs in a certain time frame.
+This allows for a better risk assessment of the current situation and better risk management to eliminate potential risks before they impact the organization in a negative way";Scientific 
+https://ieeexplore.ieee.org/abstract/document/8892275?casa_token=ACeeSzcyWe4AAAAA:zqTnYy-G1TT5eS9-VYK7YQz6gYajrwdNrm8mssrTPwzmfvk03jctxguKcR0YeSrH6q6vJqLJ;"Investigation of wear and destruction of the surface and subsurface layers is a relevant applied scientific and technical problem [1]–[7].
+Several examples of proposed technology for recognizing wear products are presented.
+The high reflectivity of wear particles was used compared with the background and the methods of threshold separation.
+The range map contains information on the shape of the surface of the wear particle.
+It has been presented some examples and concepts for combining and applying computer vision, artificial intelligence, and big data techniques to identify wearing products.
+Further development of the industry and modern technologies will promote the introduction and improvement of such expert technology.
+Development of information technologies supervised according to technological processes in high-speed machine parts and areas has a principal issue.
+New materials are constantly being created, as well as intelligent systems, which include methods of computer or machine vision modern technology [8]–[15].
+The product life cycle can be briefly presented in the following sequence: 1) designing the component in accordance with the specific needs; 2) manufacturing of parts; 3) operation of the part during which the control and diagnostics of the part is carried out; 4) failure of the parts; 5) recycling and recycling of parts.
+When manufacturing parts have produced on the metal cutting machine, the material is separated in the chips form.
+In the case of friction, the material is usually separated in the form of wearing products.
+Cutting and wearing products can serve as identifiers of the destructive processes occurring in the surface and subsurface layers of the material.
+A variety of different methods are used to describe the shape of the surface for the recognition of graphic objects.
+Identification of both cutting and wearing products can be done using computer vision techniques.
+Automation of the recognition of cutting and wearing products by means of computer vision will allow to more closely approach the processes of material destruction of the surface and subsurface layers and components, both during the creation of the part and during its operation.
+The processes of material destruction are accompanied by the separation of particles of material, which are called particles of wear.
+Identification and detection of wear particles is an urgent task, designed to ensure the safety of people movement in road transport.";Scientific 
+https://www.e3s-conferences.org/articles/e3sconf/abs/2021/21/e3sconf_aeecs2021_03091/e3sconf_aeecs2021_03091.html;"Research on the Reform of Higher Automotive Engineering Education Under the Background of Artificial Intelligence
+Wuhan University of Technology College of Automotive Engineering Wuhan, China
+With the wide application of Artificial Intelligence (AI) in the field of automobile, IntelliDrive has become a new development direction in the automotive industry.
+Under the background of AI, automobile companies put forward new requirements for the ability and quality of automotive engineering talents.
+There is a huge gap in compound automotive engineering talents that can meet the needs of automobile enterprises.
+This paper starts from the current situation of auto companies’ demanding for talents in automotive engineering under the background of AI, analyzes the current problems in the process of training automotive engineering professionals in Chinese colleges and presents a plan to promote the reform of the training mode of automotive engineering professionals in colleges from four aspects: curriculum system construction, teaching staff construction, school-enterprise joint training, strengthen the personalized training of students.
+Current usage metrics show cumulative count of Article Views and Abstracts Views on Vision4Press platform.
+Data correspond to usage on the plateform after 2015.
+The current usage metrics is available 48-96 hours after online publication and is updated daily on week days.
+Exploration and Practice of Coordinated Development of Teachers and Students in Innovation and Entrepreneurship Education of Artificial Intelligence SHS Web of Conferences 157, 02025 (2023)";Scientific 
+https://hal.science/hal-02156048/#;"INTRODUCTION
+Artificial intelligence (AI) has made progress from a vision to real usage in the automotive domain.
+Machine learning has still its limitations, especially regarding questions related to functional safety
+This already starts with the unsureness given in the definition itself.
+From a computational point of view there are a couple of advantages of using artificial intelligence methods to be mentioned [10]: Inherent distributed representation of a function which is the base for realization in parallel programming units.
+Regarding this norm the usage is not possible, as artificial intelligence systems often do not fulfill the basic principle of deterministic reaction of a system
+This basic principle of the functional safety was so far not discussable in the past.
+RELATED WORK
+In [7] Rasmussen introduces a model of human behavior based on three levels of performance of skilled human operators.
+Safety analysis methods like functional hazard analysis [11] are standard in several industries
+They are not applied and integrated in the literature to a systematic approach for safety argumentation for systems using artificial intelligence
+Structural definitions
+The term “system” is used as defined by ISO26262 [3], i.e. “a set of elements that relates at least a sensor, a controller and an actuator with one another”.
+During the learning procedure (2) the AI-system (1) is triggered by input vectors xT=(x1, ...
+Xn) that are given by a learning content (3) and the AI-system adapts itself such that the output vectors yT=(y1, ...
+I.e. it reasons from a special learned input vector xT to a general one x~T
+Behavioral definitions
+With the definitions given so far the AI-system is still considered as a black box system.
+In automotive vehicle control usually quantitative models for systems design and performance analysis are used.
+Compared to categories of human performance, the tasks of the process model are typically categorized into skill-based behavior, rule-based behavior and knowledge-based behavior [7].
+At the rule-based behavior level typically the action is controlled by a sequence of stored procedures.
+In traditional automotive control systems the safety argumentation is based on the rule-based level only.
+The structure of the safety argumentation for AI-systems as worked out in this paper comprises all levels
+FUNCTIONAL HAZARD ANALYSIS
+An initial FHA is contained in traditional envelope protection functions as ABS or ESC an emergency stop function.
+These functions can mitigate situations of AI-system failure.
+System Runtime Failure Inadequate on-line procedure Reasonably foreseeable event
+On-operation versus Off-operation learning
+Off-operation means that the learning and the operation phase are separated from each other in the product lifecycle process.
+On-operation enables adaptations of the AI-system with the help of learning during operation, i.e. during driving within the car
+Supervised- versus unsupervised- versus reinforcementlearning
+This classification mainly determines which control is given during the learning phase through the process [5].
+To determine the suitability of the neural network given an input a ‘critic’ element produces a ‘correct’ or ‘incorrect’ signal
+This signal is generated by observing the interaction of the neural network with the environment
+Deterministic- versus stochastic- learning approaches
+Some learning methods include an optimization step. This step is often done using stochastic optimization methods.
+Using stochastic approaches makes the argumentation even more complex and in case of on-operation learning impossible regarding the requirement to fulfill the basic principle of deterministic reaction of a system.
+As a complete consideration of all possible combinations of the classifications would be beyond the limited space of this paper, we will limit us in the remaining paper to off-operation, deterministic learning approach exemplarily analyzed using neural networks
+SAFETY ARGUMENTS FOR NEURAL NETWORKS
+Based on the safety integrity level classification given by the hazard analysis, the safety case responds with a structured argument intended to justify that the system is acceptably safe for the specific AI-system in a specific operating environment.
+We used a hierarchical GSN modeling approach: Figure 4 shows the goal structure for neural networks on a top level.
+Leafs of the GSN tree represent a list of methods applicable in the safety argumentation.
+They introduce the Lime procedure to create explanations that reflect the behavior of the classifier ""around"" the instance being predicted
+Solutions regarding G10 – Restriction of outcome space
+A restriction of the outcome space provides a reduction of complexity and in some solutions the possibility to ensure stability between input and output.
+With a similar goal the method novelty detection classifies test data that differs from the training data
+Both methods do not restrict the values of the outcome space completely but reduce the probability of failure classification.
+The usage of dead bands such that learning is allowed only when useful command/response dynamics are available should ensure that the neural network does not adapt to noise or drift away from good solutions
+Solutions regarding G11 – Formal methods
+In the literature one may find an increasing set of formal methods that are at all an attempt to get the structures of neural networks understandable, reasonable and under control.
+Several neural network specification languages have been developed, like CONNECT [17], nn [17], NSL [19], NeuroML [20], or EpsiloNN [21].
+Specification languages directly influence the structure of neural networks
+Another technique is the usage of linear models.
+Bayesian regularization is a mathematical process that enables to consider the neural network in the context of a statistical problem to enable the applicability of regression analytics
+ASSIGNMENT OF SAFETY METHODS TO BEHAVIOR LEVELS
+All the solutions presented in the previous section make more or less use of the knowledge that is coded in the neural network.
+The list of technical measures is neither complete nor sufficient for the complete fulfillment of a safety argumentation in a concrete automotive application context.
+The more knowledge is needed for the application of a solution the more effort has to be done during the application
+VIII. CONCLUSION AND OUTLOOK
+The ultimate goal to provide guarantees for all unexpected cases cannot be achieved by definition.
+For example, there always exists a point where the physical system is damaged/changed to such an extent that adaptation toward controllable behavior is not possible [4].
+The list of solutions presented in this paper is not complete to argue the applicability of a neural network in an automotive safety application.
+More research is needed to ensure the functional safety in the upcoming future application of neural networks in the automotive applications";Scientific 
+https://www.mdpi.com/2072-666X/13/9/1380;;Scientific 
+https://www.mdpi.com/2072-666X/13/9/1380;"Introduction
+Due to the advancement of semiconductor technology, it has solved many existing hardware computing bottleneck problems, coupled with the advancement of 5G networks and the significant improvement of communication efficiency, resulting in the acceleration of artificial intelligence (AI) applications [1].
+Applications are ubiquitous, and the realization of the Internet of Vehicles (IoV) in countries around the world has accelerated the trend of commercial operation [2]
+Communication technologies, such as Industry 4.0/5.0 or 5G/6G, are necessary or indispensable infrastructures for enterprises and industries to go digital.
+With the advent of the era of the IoV and the rapid advancement of miniaturized process technologies such as contemporary MEMS, 4.0/)
+Objectives
+This paper aimed to provide a brief overview of the recent literature review of AI on predictive maintenance techniques, especially in the field of automotive applications
+Methods
+A research study on unsupervised machine learning algorithms for early fault detection in predictive maintenance [26].
+Vehicle trajectory prediction based on social generative adversarial network for self-driving car applications [40].
+Support vector machine based multiple fault detection in an automobile engine using sound signal
+Conclusion
+Discussion and Conclusions
+
+In the current era of 5G communication development, the IoV communication network is a very important development focus.
+To be able to warn of failures before they occur, predictive maintenance (PdM) can be used, which is a preventative optimal maintenance strategy that predicts potential failures and takes immediate and appropriate maintenance actions [14].
+It can be seen that AI technology is crucial to the development of the IoV";Scientific 
+https://lamintang.org/journal/index.php/ijai/article/view/134;"Introduction
+With the development of vehicle network technology and information technology, the interaction interface of automobile becomes richer and more diversified.
+The information model has gradually developed from a single driving and condition information model to a complex information system including automobile information, inter-car information, information of car and other information carriers [2]
+In such a complex information system, besides completing the main driving task of controlling the car, maintaining the lane and monitoring the road condition, drivers perform a large number of in-vehicle secondary tasks which have nothing to do with driving or are not directly related to driving.
+Many studies have proved that secondary tasks represented by in-vehicle information interaction seriously affect driver's driving efficiency and traffic safety [4] [5].
+Facing with the increasingly complex automobile interaction system, how to make users understand the hierarchical relationship of information clearly, how to get information nodes clearly, how to process information quickly and efficiently, how to improve operation efficiency, so as to perform operation accurately and efficiently, is the starting point of automobile Human-computer interaction design research [7].
+Touch Screen Control Interactive Mode Owing to the increasing new functions and the insurmountable shortcomings of physical operators, the interaction mode based on physical operators is facing enormous challenges, which makes touch control develop rapidly.
+To drivers who need to concentrate on driving will face enormous risk
+Speech Interaction Mode
+Speech interaction refers to the direct use of speech as a sensor to directly control equipments without the need for physical controllers.
+The accuracy of speech recognition is affected by tone, environmental noise and interference.
+At this stage, the first problem to be solved in speech interaction is to improve speech recognition technology and semantic recognition technology
+Somatosensory Interaction Technology
+Somatosensory interaction technology is an intelligent technology that can directly use limb movements to interact with digital devices and environment without any control equipment, and complete various instructions according to human actions, and manipulate them at will.
+HUD Visual Augmented Reality Technology In the field of automotive Human-computer interaction, head-up display (HUD) and augmented reality (AR) are combined to overlay the virtual information and real world information on the screen and interact on this basis, as shown Figure 6.
+Interaction Model Based on Biometrics and Perception Technology The safety is a major demand for automobile drivers for a long time and in the future.
+In this way, it can protect the driver's safety to the greatest extent, and prompt other vehicles to avoid the car.
+Speech technology plays an important role in reducing driver distraction, improving interaction efficiency and driving safety.
+The Human-computer interaction design of automobiles should follow the following principles: (a) Adjust the conditioner's wind speed, temperature and multimedia volume through the physical controller, without needing to control by repeatedly clicking the screen or long pressing the screen.
+The speech control system needs to set oneclick to start and close to prevent the audio signal input of non-user instructions. (d) Using augmented reality technology, made the important driving information such as navigation project to the front windshield to reduce the driver's line-of-sight deviation and improve driving safety
+Findings
+The speech recognition accuracy is as high as 95% [12], but in practice, speech recognition is affected by many factors, which reduces its accuracy.
+Because speech recognition is influenced by many factors, such as dialect and environmental noise, further breakthroughs in speech recognition and semantic recognition are needed to achieve a complete Human-computer dialogue-recognition accuracy of 99%
+Conclusion
+Automotive Human-computer interaction interface is an important platform for automobile and driver.
+Automobile Human-computer interaction design has always been a very important research topic.";Scientific 
+http://jamme.acmsse.h2.pl/papers_vol31_2/31264.pdf;"Journal of Achievements in Materials and Manufacturing Engineering
+Volume 31 Issue 2 December 2008 and viable automotive sector and to enhance local capabilities in the automotive sector.
+The advantages of reuse in terms of economic benefits as well as environmental safety will direct the local automotive manufacturers to deal with the end of life recovery of their products.
+Kara et al [5] conducted a study to determine the reuse potential of washing machine component based on estimated operating life time by comparing multi regression analysis and artificial intelligence.
+The essential goal of reuse strategy is to determine the potential reuse components that optimise economic benefits, reliability and durability of the reuse components at the end of life cycle.
+The study will develop an optimisation model for automotive component reuse in order to deliver highly reliable reuse components at minimum costs.
+Artificial intelligence methods, such as artificial neural networks (ANNs) and genetic algorithm (GA) have solved many problems in decision making.
+The ability of ANNs to learn and understand the problem and to improve its performance through learning process can be applied to predict life time and reliability of automotive components based on failure data analysis.
+The combination of artificial neural network and genetic algorithm can make evolutionary computation to solve optimisation model for automotive components reuse.
+An optimisation model of an automotive component for reuse that minimise life cycle cost as well as maximise reliability will be proposed.
+The other concern is the quality of vehicles as it is driven by customers perception about reuse products that are not as good as new
+In this case, prediction of component life time and reliability become very important to ensure the quality of reuse parts/components.
+The application of artificialintelligence in optimisation of automotive components for reuse
+This new design will lead to an easier disassembly of door skin and door frame and prevent damages during disassembly process.
+This will lead to reduction in disassembly time and recovery cost.
+It will give more opportunity of car door parts such as door frame and door skin to be reused.
+The proposed design changes enable the car door to be disassembled and will reduce disassembly time as well as recovery cost.
+The model for predicting life time and reliability of automotive component will be proposed.
+The durability and reliability of the proposed design of car door for reuse will be predicted.
+The optimisation model will determine the potential car door components that maximise durability and reliability as well as minimise life cycle costs.
+The proposed design of car door for reuse will be analysed using FE method so that various stress and cycle to failure could be determined.
+The study on durability and reliability of the proposed design of the car door is currently being carried out.
+Design improvement of the car door for reuse is to increase ease of disassembly and to increase durability and reliability of the car door components.
+Based on the automotive components reliability and durability that resulted from the proposed ANNs model, the proposed optimisation model is developed in order to find the optimum automotive reuse components.
+The proposed optimisation model describes trade off between life cycle costs and reliability of reuse components.
+3. Reliability: x Reliability of each component (Xi(t)) at the end of product life time is predicted from ANNs model.
+Separability (Si): x The reuse component has to be separated, :
+Lower bound constraint
+This proposed optimisation model will be solved using Genetic Algorithm (GA). Genetic Algorithm is a stochastic search technique based on the mechanism of natural selection and natural genetics.
+This study hopes to contribute to design for reuse by assessing high potential and reliable reuse components at the lowest costs
+Artificial intelligence methods, such as artificial neural networks (ANNs) and genetic algorithm (GA), can be applied to solve this problem as they can provide satisfactory and acceptable solutions for many complex problems
+Findings";Scientific 
+https://link.springer.com/chapter/10.1007/978-3-319-94361-9_13;"Motivation
+Maintained tires adversely impact vehicle acceleration, braking, steering, comfort, and efficiency, with as many as 6, 000 deaths annually attributable to improperly maintained or defective tires [1,2].
+Vehicle owners aware of the risks of improper inflation continue to operate vehicles with underinflated tires [3], and for less-well-known issues such as tire aging, oxidation, and cracking, drivers are unaware of the need for replacement[1,2], forgoing inspection entirely.
+This paper examines the design and implementation of such a system, using a mobile phone’s camera to capture pictures of a vehicle’s tires and a leveraging a web backend to classify tires into “normal” or “abnormal” states based on the presence of surface cracking
+Prior Art
+Mobile phone sensors including accelerometers, GPS and microphones have been used to assess vehicle condition and to diagnose maintenance needs including wheel imbalance, tire pressure and air filter condition[4,5,6]
+Such devices are pervasive, inexpensive, and effective, capable of emulating the human perception of motion and sound within a moving vehicle and applying machine learning for reliable fault classification.
+With advances in software toolkits and the ability to utilize graphics processing units to massively parallelize computation, along with pervasive connectivity to allow image data to be streamed to a server for classification, now is the optimal time to explore the use of visual techniques for tire condition assessment
+Hypothesis
+Unsafe, cracked tires can have a variety of appearances based on time compound, age, and exposure to sun and chemicals.
+We believe it is possible for a Convolutional Neural Network (CNN) to develop a kernel capable of matching features based on the repeated patterns and edges present in tires with cracked sidewalls.
+It allows the central server to aggregate tire data, have a human supervise incoming images at regular intervals, and retrain the model to support continuous improvement as the training set grows
+Data Collection and Augmentation
+Collecting images of tires is a time-consuming process. To accelerate data collection, we conducted an image search for new and old tires (using the keywords “weather-checked,” ‘weathering,” “oxidized,” “cracked,” and “dry-rotted”) on Google Images, Craigslist, and eBay.
+We conducted an image search for new and old tires on Google Images, Craigslist, and eBay. By selecting the images individuals chose to upload of their own tires, we ensured the training set featured entries from a variety of camera types, resolutions, noise characteristics represented.
+After exhausting our search terms and collecting several samples manually, there were 1, 028 unique images, with 537 representing the cracked/aged class and 491 representing normal tires (a 52.2%/47.8% split).These sets were split randomly to retain 70% as in-sample training and validation data and 30% as keep-out testing data.
+The final, augmented training set included 8, 502 images of cracked tires and 9, 776 images of normal tires, a 43.4%/56.6% class balance.
+The labeled, nonaugmented image dataset will be contributed to the community
+Calculating Baseline Accuracy
+To compare our model’s performance with that of the human it is designed to help, we had to determine a human baseline to identify how well our algorithms perform relative to people.
+We presented users with the same 352 testing images used to validate the classification model in a random order and asked them to classify the tires as being either safe or unsafe with no prior coaching about what unsafe tires might look like
+These individuals provide a baseline against which we evaluate our algorithm’s target performance.
+After seeing only 10% of the dataset (35 tires viewed), the average user accuracy was 55%, or slightly better than a coin toss
+With this limited exposure, the testers had a false positive rate of 73.4% and a false negative rate of 0%.
+For our target demographic, any performance beating the performance of a simple coin toss is an improvement upon the status quo since such a model may embed knowledge about failed tires with which app users will not inherently be familiar
+Implementing a Convolutional Neural Network
+Upon observing humans prove our hypothesis that unsafe tires have visually discernible patterns, we began to design Convolutional Neural Networks (CNN’s) for classification.
+To train the DenseNet, we tuned the hyperparameters no fewer than 10 times and observed validation loss and mean accuracy, stopping after 100 epochs or apparent convergence, whichever came first
+From these trials, we developed an implementation of a densely-connected convolutional neural network with 4 blocks of 15 layers and a growth rate of k = 18.
+We tested the optimized classifier on cropped, non-augmented outsample data to validate performance on the keep-out testing set
+These were the same 352 images presented to the human testers.
+We inspected the misclassified images to seek out possible causes, and found that many of the images were over- or under-exposed, and tended to feature extreme close-ups of the tire surface
+Surface abrasions such as scuffs and flashing left over after manufacturing tended to cause misclassification as cracked when the tire condition was good, whereas blurrier photos caused cracked tires to be misclassified as safe.
+We set out to determine how the DenseNet worked on these imperfect data
+Model Functionality
+We visualized the learned filters to see if there were any discernible patterns.
+We can observe that cracks have far more activation on edges, and surface detectors appear to benefit from higher activated on the smooth surface of a safe tire
+In aggregate, these filters and activation functions are used to differentiate the tires between the normal and cracked states
+Mobile Implementation
+After developing an effective CNN classifier, we sought to implement the DenseNet as part of a mobile application.
+We made the decision to implement the service remotely and to transmit captured video information to a server for processing
+This avoided potential memory and speed limitations in mobile GPUs, as well as conserves battery life by offloading intensive processing to scalable Cloud-computing platforms.
+As images’ classification results are returned, the flask server renders one of two webpages based on the classifier’s result – one page notifies users that their tires are likely in good condition, while the other page suggests that a user’s tires may no longer be safe and instead suggests a list of tire vendors.
+Through a series of canvas manipulations, we will auto-detect when the tire fills a significant portion of the camera’s frame and automatically capture the image or a series of video frames at the optimal time
+Findings
+This paper explores the need for tire surface condition monitoring and considers the development of a densely connected convolutional neural network to identify cracking based on smartphone images
+This model attains an accuracy of 78.5% on cropped outsample images, besting inexperienced humans’ 55% performance.
+Future
+Developing a mobile implementation of a visual tire condition monitor has the potential to change how people maintain their vehicles, helping drivers stay on the road longer and safer than today.
+We are able to classify each and take a majority vote for classification to improve model robustness.
+This will reduce the application’s sensitivity to lighting, angle, and focus changes by providing redundancies.
+This work is the first step in a long line of applications that can leverage AI to improve vehicle performance, reliability, and efficiency and lays the framework for creating a “Diagnostics-as-a-Service” platform capable of turning mobiles phones into “tricorders” capable of diagnosing a range of mechanical systems";Scientific 
+https://tspace.library.utoronto.ca/bitstream/1807/110831/4/Akhshik_Masoud_202203_PhD_thesis.pdf;"Environmental and lifecycle
+assessments (LCA). The main problem with these areas is that the collected data are not comparable as every research has its own unique details even though LCA has a standard set of guidelines
+to perform. The second main problem is that we have very limited data available for machines to
+be able to use in these areas. Here in this thesis, several normalization methods and a coefficient
+were used to make these data comparable. Also, because we had limited data available, we performed several LCA studies to generate more data to be able to use it in Machine learning algorithms for the purpose of testing, validation and training. One of the advantages of having limited
+data here was that it enabled us to implement several machine learning algorithms and methods to
+compare their performances. The results of this study created a powerful tool that can help researchers, original equipment manufacturers, policymakers and automotive companies to make
+iii
+better environmental decisions prior to any design stages just by knowing the percentage of lightweighted automotive parts. This tool is specifically created to work with lightweighting that is
+resulted from replacing a glass fibre automotive part with natural fibre-reinforced composites.
+Also, with the developed coefficient of countries, one can transfer the LCA data from one country
+to another by using a simple equation. These coefficients were developed by using the countries
+posted total primary energy supply and electricity grid mix. By using these tools, we will have a
+better understanding of our emissions prior to any design with relatively high accuracy";Scientific 
+https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/building-smarter-cars;;Consultancy
+https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/building-smarter-cars;"More productive employees through robot-human collaboration. Advances in computer vision are driving progress toward collaborative, context-aware robots. More computing power and better algorithms will lead to the development of flexible, non-special-purpose robots that can work alongside humans while reacting to changes in their environment with less configuration. For example, Rethink Robotics is designing collaborative robots that a human instructor can program simply by taking the arm of the robot and guiding it through desired movements, such as gripping and releasing objects.
+
+Potential impact: Collaborative robots will simplify factory design by reducing the need for robot-only areas. Because instructing these robots will be simpler, companies will save money on development and deployment costs. Collaborative robots can help with tasks that are not fully automatable, potentially increasing productivity by up to 20 percent.";Consultancy
+https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/building-smarter-cars;;Consultancy
+https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/building-smarter-cars;"Fewer quality problems. Quality control, such as inspecting painted car bodies, is performed by human workers. This method is prone to errors and is relatively slow. But even automated methods can break down due to numerous variables in the test environment. If the lighting is not perfect or the product is mounted just a bit off-center for inspection, the current method can yield false positives. By contrast, AI-enabled visual QC can filter out these issues to focus on defects only. The AI system constantly learns to improve its analysis based on feedback. Using these methods, AI-powered hardware can visually inspect and provide superior QC on various products such as machined parts, painted car bodies, textured metal surfaces and more.
+
+Potential impact: AI-based machines can detect defects up to 90 percent more accurately than humans. Insights from AI-based quality testing can also be used to analyze root causes of defects and improve overall production processes. Productivity increases in visual quality inspection of up to 50 percent are possible.";Consultancy
+https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/building-smarter-cars;Leaner supply chains. Accurate forecasting is critical to achieving a close match between supply and demand, but traditional forecasting and replenishment systems are being overwhelmed by a mountain of data and an increasing number of influencing factors, such as the storage of many low-volume long-tail items and just-in-time production that eliminates inventory cushions. AI systems can meet these challenges by using machine learning to produce more accurate demand forecasts. AI-powered supply chains have the flexibility to adapt and respond to changes in the product mix or unforeseen events, incorporating near-real-time data on advertising campaigns, prices, even weather forecasts. Eventually, AI will allow fully automated self-adjusting systems to make supply-chain management decisions autonomously, adjusting routes and volumes to meet predicted demand spikes. While some companies are working to develop predictive forecasting and replenishment tools internally, others are turning to established vendors like Blue Yonder, which offer AI techniques capable of optimizing forecasting and replenishment while simultaneously adjusting pricingPotential impact: AI-based approaches could reduce forecasting errors by 30 to 50 percent. AI could reduce overall inventories by 20 to 50 percent, generating a cascade of cost savings by eliminating the transport, warehousing, and supply-chain administration of unneeded goods.;Consultancy
+https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/building-smarter-cars;"Smarter project management. It can be hard to measure R&D progress or understand when to kill a project in order to free up resources for more promising items in the R&D portfolio. As a result, zombie projects with unclear status and milestones tend to linger, burning money, inflating total R&D costs, increasing time-to-market for worthwhile projects, and causing frustration all around. AI-based methodologies can improve R&D project prioritization and increase performance within individual projects, thus liberating budgets and raising overall efficiency. Take the example of F1 race car engineering. Failure rates of R&D projects to improve F1 car performance approach 90 percent. QuantumBlack, a firm specializing in advanced analytics, has successfully employed AI to streamline the R&D process and identify the most promising R&D projects early on. In part, it does this by pulling data from a wide variety of integrated sources and then using AI and machine learning to forecast factors that might detract from performance. Team dynamics are a key performance lever. Projects with a high level of interconnectedness should have high-intensity communications. By analyzing communications and discovering patterns, QuantumBlack can warn managers early on if a project seems to be off-track.
+
+Potential impact: QuantumBlack’s AI-based approach typically generates R&D productivity gains of 10 to 15 percent and accelerates time to market by 10 to 40 percent.";Consultancy
+https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/building-smarter-cars;"Improved business support functions. Business support functions such as finance, HR, and IT are resource-intensive but vital to a company’s success. Cost pressures and flexibility requirements are driving demand for digitization. AI has high potential to automate tasks such as IT or finance that are already supported by computer systems. For example, on an IT service desk, codified problem-solving strategies and knowledge (such as server configuration) can be fed into an AI system so it can automatically combine individual pieces of knowledge to build a tailor-made problem-resolution process. This step employs reinforcement learning—the same technique that Google’s AlphaGo used to beat the world’s human Go champion.
+
+Potential impact: Automation rates of approximately 30 percent are expected within business support functions. For the specific example on IT service-desk automation, a degree of automation of around 90 percent is possible. Automation is accompanied by greater accuracy and consistency, increased scalability and speed, and traceability of results, all at around-the-clock availability.";Consultancy
+https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/building-smarter-cars;Prioritize projects based on business logic. It’s still important to get a solid grounding in AI tech so that you can separate hype from facts. Make sure to establish a solid business case for an AI investment. Prioritize projects according to their technical feasibility and overall impact potential from both financial and productivity standpoints. Given the rapid pace of change in AI technology, you will want to re-analyze these business cases on a regular basis. A project that wasn’t feasible months ago might now be within reach.;Consultancy
+https://www.bcg.com/publications/2022/how-automakers-can-successfully-apply-ai-in-sales-marketing;e see abundant opportunities for automotive OEMs to deploy AI in sales and marketing to improve financial performance. AI can guide automakers on how to target prices and rebates, improving profitability by as much as 5%. It can optimize the pricing of aftermarket parts, yielding up to 5% top-line growth. AI can create better micromarket intelligence, producing up to 3% sales growth. And it can predict inventory needs and optimal vehicle configurations, reducing the number of days an unsold vehicle sits on a dealer’s lot, often by as much as 30%. According to a recent BCG report, the top use cases together can generate 10% to 25% bottom-line growth. For an OEM with $100 billion in sales, this can mean more than $1 billion in incremental operating income.;Consultancy
+https://www.bcg.com/publications/2022/how-automakers-can-successfully-apply-ai-in-sales-marketing;"Auto companies have chased these gains by piloting various use cases. However, many have frequently failed to scale the use cases and, consequently, haven’t obtained significant value from their investments. In their quest for exponential or hockey stick growth, OEMs often fail to reach the steep section of the curve.
+
+A variety of challenges contributes to the fail-to-scale pattern. (See Exhibit 1.) For example, automotive companies typically approach AI projects in a disjointed manner. They tap one team to devise the project, another to build a proof of concept (PoC), a third to launch a minimum viable product (MVP), and a fourth to scale the venture. Many AI solutions also fail because their underlying algorithms oversimplify the business problems they are intended to solve, rather than conquer the problems’ complexities.";Consultancy
+https://www.bcg.com/publications/2018/artificial-intelligence-factory-future;Machine Vision. Sensing the production environment through visual, x-ray, or laser signals—for example, using a camera to classify parts and products ;Consultancy
+https://www.bcg.com/publications/2018/artificial-intelligence-factory-future;Speech Recognition. Processing speech and other acoustic signals—for example, using a virtual assistant similar to Alexa or Siri to process comments from operators about quality issues ;Consultancy
+https://www.bcg.com/publications/2018/artificial-intelligence-factory-future;Natural-Language Processing. Parsing text and interpreting its most probable meaning—for example, creating summaries from different performance reports ;Consultancy
+https://www.bcg.com/publications/2018/artificial-intelligence-factory-future;Learning from Data. Predicting or classifying values on the basis of empirical production-related data—for example, using historical data generated by machines and processes to predict events;Consultancy
+https://www.bcg.com/publications/2018/artificial-intelligence-factory-future;Information Processing. Extracting knowledge from unstructured text and retrieving answers to queries—for example, by searching in production-related text reports;Consultancy
+https://www.bcg.com/publications/2018/artificial-intelligence-factory-future;Speech Generation. Communicating with humans via written text or acoustic speech—for example, reading instructions aloud;Consultancy
+https://www.bcg.com/publications/2018/artificial-intelligence-factory-future;Handling and Control. Manipulating physical objects—for example, enabling robots to pick unsorted parts from a storage bin without requiring specific training;Consultancy
+https://www.bcg.com/publications/2018/artificial-intelligence-factory-future;Navigation and Movement. Maneuvering through physical environments—for example, enabling an AGV to move and optimize its routes autonomously within a factory;Consultancy
+https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/the-future-is-now-unlocking-the-promise-of-ai-in-industrials;"Despite this opportunity, many executives remain unsure where to apply AI solutions to capture real bottom-line impact. The result has been slow rates of adoption, with many companies taking a wait-and-see approach rather than diving in.
+
+Rather than endlessly contemplate possible applications, executives should set an overall direction and road map and then narrow their focus to areas in which AI can solve specific business problems and create tangible value. As a first step, industrial leaders could gain a better understanding of AI technology and how it can be used to solve specific business problems. They will then be better positioned to begin experimenting with new application";Consultancy
+https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/the-future-is-now-unlocking-the-promise-of-ai-in-industrials;"AI scheduling agents
+Some of the most difficult challenges for industrial companies are scheduling complex manufacturing lines, maximizing throughput while minimizing changeover costs, and ensuring on-time delivery of products to customers. AI can help through its ability to consider a multitude of variables at once to identify the optimal solution. For example, in one metals manufacturing plant, an AI scheduling agent was able to reduce yield losses by 20 to 40 percent while significantly improving on-time delivery for customers.
+
+Traditional optimization approaches collapse in an attempt to manage significant uncertainty and fluctuation in supply or demand. This problem has become particularly relevant given all of the supply chain issues over the past year. Using scheduling agents based on reinforcement learning,3 companies can translate this issue into a question—“What order is most likely to maximize profit?”—that yields a clear recommendation.
+
+To solve this problem, companies must first build an environment in which the AI scheduling agent can learn to make good predictions (Exhibit 1). In this situation, relying on historical data (as typical machine learning does) is simply not good enough because the agent will not be able to anticipate future issues (such as supply chain disruptions).
+
+Exhibit 1
+Using a digital twin, reinforcement trained an AI scheduling agent.
+We strive to provide individuals with disabilities equal access to our website. If you would like information about this content we will be happy to work with you. Please email us at: McKinsey_Website_Accessibility@mckinsey.com
+Instead, organizations can start by building a simulation or “digital twin” of the manufacturing line and order book. A scheduling agent can then schedule the line. The agent’s performance is scored based on the cost, throughput, and on-time delivery of products. Next, the agent “plays the scheduling game” millions of times with different types of scenarios. Just as Deep Mind’s AlphaGo agent got better by playing itself, the agent uses deep reinforcement learning to improve scheduling.4 Before long, the agent is able to create high-performance schedules and work with the human schedulers to optimize production.";Consultancy
+https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/the-future-is-now-unlocking-the-promise-of-ai-in-industrials;"Knowledge discovery
+MOST POPULAR INSIGHTS
+Net zero: Next moves for CEOs
+What is business transformation?
+The future of mobility: Mobility evolves
+What is generative AI?
+The multiplier effect: How B2B winners grow
+Many industrial companies face the common issue of identifying the most relevant data when faced with a specific challenge. AI can accelerate this process by ingesting huge volumes of data and rapidly finding the information most likely to be helpful to the engineers when solving issues. For example, companies can use AI to reduce cumbersome data screening from half an hour to a few seconds, thus unlocking 10 to 20 percent of productivity in highly qualified engineering teams. In addition, AI can also discover relationships in the data previously unknown to the engineer.
+
+After decades of collecting information, companies are often data rich but insights poor, making it almost impossible to navigate the millions of records of structured and unstructured data to find relevant information. This challenge is particularly important when engineers are troubleshooting new issues on highly complex systems (for example, aircraft, spacecraft, and power plants) to find the most relevant procedures, machine performance data, history of operations, and instances of relevant issues on similar subsystems. Engineers are often left relying on their previous experience, talking to other experts, and searching through piles of data to find relevant information. For critical issues, this high-stakes scavenger hunt is stressful at best and often leads to suboptimal outcomes.
+
+Companies can teach AI to navigate text-heavy structured and unstructured technical documents by feeding it important technical dictionaries, lookup tables, and other information. They can then build algorithms to help AI understand semantic relationships between different text. Next, a knowledge graph5 can dynamically create an information network that represents all the semantic and other relationships in the technical documents and data (Exhibit 2). For example, using the knowledge graph, the agent would be able to determine a sensor that is failing was mentioned in a specific procedure that was used to solve an issue in the past. Once the knowledge graph is created, a user interface allows engineers to query the knowledge graph and identify solutions for particular issues. The system can be set up to collect feedback from engineers on whether the information was relevant, which allows the AI to self-learn and improve performance over time.";Consultancy
+https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/the-future-is-now-unlocking-the-promise-of-ai-in-industrials;"AI-enabled product system design
+For many industrial companies, the system design of their products has become incredibly complex. Organizations can use AI to augment a product’s bill of materials (BoM) with data drawn from its configuration, development, and sourcing. This process identifies opportunities to reuse historical parts, improve existing standard work, and support preproduction definition. With these insights, companies can significantly reduce engineering hours and move to production more quickly.
+
+When a single project can have millions of parts and thousands of submodules and subsystems, it can be nearly impossible for any single engineer to have a full systems view as well as an understanding of the detailed design of individual components, let alone across projects. As a result, systems are redesigned with each new project but overlook opportunities to reuse parts, driving up costs and increasing supply chain complexity. In addition, engineers can face significant rework on projects from not fully understanding interdependencies across the system.
+
+Fortunately, AI approaches do not have such limitations. With sufficient memory and computation, AI-based solutions can easily look across millions of parts and projects and billions of relationships to identify opportunities for reuse and sequence processes to avoid rework related to interdependencies. A network-based representation of the system using BoM can capture complex relationships and hierarchy of the systems (Exhibit 3). This information is augmented by data on engineering hours, materials costs, and quality as well as customer requirements. With this enhanced network build, companies can query and make predictions—for example, what subsystems a customer requirement might affect and the engineering efforts that are most likely to cause rework in a project based on interdependencies.";Consultancy
+https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/the-future-is-now-unlocking-the-promise-of-ai-in-industrials;"Product performance optimization
+As products have evolved, pushing the boundaries of performance has become increasingly challenging. Industrial companies that can rapidly innovate and bring higher-performing products to market faster are much more likely to gain market share and win in their market segments.
+
+Over the past three decades, computer-aided engineering (CAE) and simulation have helped, but the limits on their computing power are preventing them from fully exploring the design space and optimizing performance on complex problems. For example, components typically have more than ten design parameters, with up to 100 options for each parameter. Because a simulation takes ten hours to run, only a handful of the resulting trillions of potential designs can be explored in a week. Companies that rely on experienced engineers to narrow down the most promising designs to test in a series of designed experiments risk leaving performance on the table.
+
+AI uses a deep-learning neural network to create a digital twin of the component and predict performance (Exhibit 4).6 Organizations can also use Bayesian optimizers to predict the most promising areas of the design space to explore.7 Shifting from exact calculations to a directional problem-solving approach focused on predictions exponentially accelerates the evaluation of design. An engine can generate millions of potential designs that are evaluated using the deep-learning digital twin. A genetic algorithm can then optimize the system for multiple performance metrics at the same time (for example, in automotive top speed and fuel economy).";Consultancy
+https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/the-future-is-now-unlocking-the-promise-of-ai-in-industrials;"AI-augmented root cause analysis
+Industrial companies build their reputations based on the quality of their products, and innovation is key to continued growth. Winning companies are able to quickly understand the root causes of different product issues, solve them, and integrate those learnings going forward. AI can dramatically speed up this process.
+
+Since the complexity of products and operating conditions has exploded, engineers are struggling to identify root causes and track solutions. As a result, companies are highly dependent on pattern recognition by experienced engineers and spend a lot of time trying to re-create issues in lab environments in an attempt to get to the root cause.
+
+AI and causal modeling8 approaches can reformulate this complexity into a defined business problem: “What are the top five most likely root causes for this issue?” Companies can start by building an event-based data model that connects thousands of variables across the product history and development life cycle, including design configurations, manufacturing parameters, and maintenance and repair history. An AI-based model can then identify the top predictors of incidents related to a specific issue (Exhibit 5). Next, causal modeling approaches separate variables that are correlated from those likely to be causal. A user interface enables engineers to query and find the most likely root causes of new issues.
+";Consultancy
+https://www.mckinsey.com/capabilities/quantumblack/our-insights/most-of-ais-business-uses-will-be-in-two-areas;"Many business leaders are still not exactly sure where they should apply AI to reap the biggest rewards.
+The business areas that traditionally provide the most value to companies tend to be the areas where AI can have the biggest impact.
+For example, marketing and sales has often provided significant value.
+AI can enable forecasting based on underlying causal drivers of demand rather than prior outcomes, improving forecasting accuracy by 10 to 20 percent.
+This translates into a potential 5 percent reduction in inventory costs and revenue increases of 2 to 3 percent
+Would you like to learn more about McKinsey Analytics?
+While applications of AI cover a full range of functional areas, it is in these two cross-cutting ones—supply-chain management/manufacturing and marketing and sales—where we believe AI can have the biggest impact, at least for in several industries.
+AI’s ability to process massive amounts of data, including audio and video, means it can quickly identify anomalies to prevent breakdowns, whether that be an odd sound in an aircraft engine or a malfunction on an assembly line detected by a sensor.
+Another way business leaders can home in on where to apply AI is to look at the functions that are already taking advantage of traditional analytics techniques.
+We found that the greatest potential for AI to create value is in use cases where neural network techniques could either provide higher performance than established analytical techniques or generate additional insights and applications.
+This is true for 69 percent of the AI use cases identified in our study.";Consultancy
+https://www2.deloitte.com/us/en/blog/business-operations-room-blog/2022/computer-vision-manufacturing-ai.html;Computer Vision: Quality Inspection – perhaps the most traditional use case for vision, this application began with detecting regions of interest along with the temporal states and AI-driven activity detection.  The analysis in this case is that of a single frame and use cases range from surface defects to dimensional tolerancing. The benefits here include a reduction in quality escapes, less rework, and a reduction in non-value-add inspection time from the front-line.;Consultancy
+https://www2.deloitte.com/us/en/blog/business-operations-room-blog/2022/computer-vision-manufacturing-ai.html;Computer Vision: Factory Synchronization and Dynamic Scheduling – uses cameras mounted throughout a facility or loT to track material and product movement in real-time. This information is synced back to other manufacturing systems (e.g., ERP and MES) to dynamically schedule and allocate resources. Improvements from this use case include improved agility, reduction in inventory, and higher OEE.;Consultancy
+https://www2.deloitte.com/us/en/blog/business-operations-room-blog/2022/computer-vision-manufacturing-ai.html;Human-to-Machine (cobots) and Machine-to-Machine Collaboration (robots) – the human will never be replaced in the manufacturing facility, but we do know that augmenting them will result in better outcomes. As cobots become more commonplace and we ask robots to turn from a single player to a team-based approach, advanced computer vision techniques will be leveraged to keep people safe and optimize the way a team of robots knocks out a task. Here, one can use either periodic single frame analyses or spatio-temporal analyses that video permits. Benefits here are broad, but worker safety is the key benefit.;Consultancy
+https://www2.deloitte.com/us/en/blog/business-operations-room-blog/2022/computer-vision-manufacturing-ai.html;Human Activity and Advancing the Front Line – more to come on this later, but in the way an industrial engineer is tasked with understanding and optimizing various human movements within a facility, computer vision also can. This ranges from manual assembly analytics (think a time study for every single assembly cycle) to automated spaghetti diagrams to social distance tracking. Here, most recent advances in computer vision, the analysis of video streams, is a necessity. This use case is also wide ranging in terms of benefits, but the primary value levers include improved quality and higher productivity of a manufacturer’s largest asset, their workforce.;Consultancy
+https://hbr.org/2018/01/artificial-intelligence-for-the-real-world;"Process automation. Of the 152 projects we studied, the most common type was the automation of digital and physical tasks—typically back-office administrative and financial activities—using robotic process automation technologies. RPA is more advanced than earlier business-process automation tools, because the “robots” (that is, code on a server) act like a human inputting and consuming information from multiple IT systems. Tasks include:
+transferring data from e-mail and call center systems into systems of record—for example, updating customer files with address changes or service additions;
+replacing lost credit or ATM cards, reaching into multiple systems to update records and handle customer communications;
+reconciling failures to charge for services across billing systems by extracting information from multiple document types; and
+“reading” legal and contractual documents to extract provisions using natural language processing.";Press 
+https://hbr.org/2018/01/artificial-intelligence-for-the-real-world;RPA is the least expensive and easiest to implement of the cognitive technologies we’ll discuss here, and typically brings a quick and high return on investment. (It’s also the least “smart” in the sense that these applications aren’t programmed to learn and improve, though developers are slowly adding more intelligence and learning capability.) It is particularly well suited to working across multiple back-end systems.;Press 
+https://hbr.org/2018/01/artificial-intelligence-for-the-real-world;At NASA, cost pressures led the agency to launch four RPA pilots in accounts payable and receivable, IT spending, and human resources—all managed by a shared services center. The four projects worked well—in the HR application, for example, 86% of transactions were completed without human intervention—and are being rolled out across the organization. NASA is now implementing more RPA bots, some with higher levels of intelligence. As Jim Walker, project leader for the shared services organization notes, “So far it’s not rocket science.”;Press 
+https://hbr.org/2018/01/artificial-intelligence-for-the-real-world;"Cognitive insight. The second most common type of project in our study (38% of the total) used algorithms to detect patterns in vast volumes of data and interpret their meaning. Think of it as “analytics on steroids.” These machine-learning applications are being used to:
+predict what a particular customer is likely to buy;Cognitive insights provided by machine learning differ from those available from traditional analytics in three ways: They are usually much more data-intensive and detailed, the models typically are trained on some part of the data set, and the models get better—that is, their ability to use new data to make predictions or put things into categories improves over time.
+identify credit fraud in real time and detect insurance claims fraud;
+analyze warranty data to identify safety or quality problems in automobiles and other manufactured products;
+automate personalized targeting of digital ads; and
+provide insurers with more-accurate and detailed actuarial modeling.";Press 
+https://hbr.org/2018/01/artificial-intelligence-for-the-real-world;"Cognitive engagement. Projects that engage employees and customers using natural language processing chatbots, intelligent agents, and machine learning were the least common type in our study (accounting for 16% of the total). This category includes:
+intelligent agents that offer 24/7 customer service addressing a broad and growing array of issues from password requests to technical support questions—all in the customer’s natural language;
+internal sites for answering employee questions on topics including IT, employee benefits, and HR policy;
+product and service recommendation systems for retailers that increase personalization, engagement, and sales—typically including rich language or images; and
+health treatment recommendation systems that help providers create customized care plans that take into account individual patients’ health status and previous treatments.";Press 
+https://hbr.org/2018/01/artificial-intelligence-for-the-real-world;"Bottlenecks. In some cases, the lack of cognitive insights is caused by a bottleneck in the flow of information; knowledge exists in the organization, but it is not optimally distributed. That’s often the case in health care, for example, where knowledge tends to be siloed within practices, departments, or academic medical centers.
+Scaling challenges. In other cases, knowledge exists, but the process for using it takes too long or is expensive to scale. Such is often the case with knowledge developed by financial advisers. That’s why many investment and wealth management firms now offer AI-supported “robo-advice” capabilities that provide clients with cost-effective guidance for routine financial issues.";Press 
+https://hbr.org/2018/01/artificial-intelligence-for-the-real-world;Inadequate firepower. Finally, a company may collect more data than its existing human or computer firepower can adequately analyze and apply. For example, a company may have massive amounts of data on consumers’ digital behavior but lack insight about what it means or how it can be strategically applied. To address this, companies are using machine learning to support tasks such as programmatic buying of personalized digital ads or, in the case of Cisco Systems and IBM, to create tens of thousands of “propensity models” for determining which customers are likely to buy which products.;Press 
+https://hbr.org/2018/01/artificial-intelligence-for-the-real-world;Selecting the technology. The third area to assess examines whether the AI tools being considered for each use case are truly up to the task. Chatbots and intelligent agents, for example, may frustrate some companies because most of them can’t yet match human problem solving beyond simple scripted cases (though they are improving rapidly). Other technologies, like robotic process automation that can streamline simple processes such as invoicing, may in fact slow down more-complex production systems. And while deep learning visual recognition systems can recognize images in photos and videos, they require lots of labeled data and may be unable to make sense of a complex visual field.;Press 
+https://research.aimultiple.com/manufacturing-ai/;" Predictive maintenance
+Manufacturers leverage AI technology to identify potential downtime and accidents by analyzing sensor data. AI systems help manufacturers forecast when or if functional equipment will fail so its maintenance and repair can be scheduled before the failure occurs. Thanks to AI-powered predictive maintenance, manufacturers can improve efficiency while reducing the cost of machine failure.";Press 
+https://research.aimultiple.com/manufacturing-ai/;"2. Generative design
+Generative design uses machine learning algorithms to mimic an engineer’s approach to design. Designers or engineers enter parameters of design (such as materials, size, weight, strength, manufacturing methods, and cost constraints) into generative design software and the software provides all the possible outcomes that can be created with those parameters. With this method, manufacturers quickly generate thousands of design options for one product.";Press 
+https://research.aimultiple.com/manufacturing-ai/;"3. Price forecasting of raw material
+The extreme price volatility of raw materials has always been a challenge for manufacturers. Businesses have to adapt to the unstable price of raw materials to remain competitive in the market. AI-powered software like can predict materials prices more accurately than humans and it learns from its mistakes.";Press 
+https://research.aimultiple.com/manufacturing-ai/;"4. Robotics
+Industrial robots, also referred to as manufacturing robots, automate repetitive tasks, prevent or reduce human error to a negligible rate, and shift human workers’ focus to more productive areas of the operation. Applications of robots in plants vary. Applications include assembly, welding, painting, product inspection, picking and placing, die casting, drilling, glass making, and grinding.
+
+Industrial robots have been in manufacturing plants since the late 1970s. With the addition of artificial intelligence, an industrial robot can monitor its own accuracy and performance, and train itself to get better. Some manufacturing robots are equipped with machine vision that helps the robot achieve precise mobility in complex and random environments.
+
+Cobots are another robotics application that uses machine vision to work safely alongside human workers to complete a task that cannot be fully automated. Feel free to learn more about cobots with our comprehensive guide.";Press 
+https://research.aimultiple.com/manufacturing-ai/;"5. Edge analytics
+Edge analytics provides fast and decentralized insights from data sets collected from sensors on machines. Manufacturers collect and analyze data on edge to reduce time to insight. Edge analytics has three use cases in manufacturing:
+
+Improving production quality and yield
+Detecting early signs of deteriorating performance and risk of failure
+Tracking worker health and safety by using wearables
+To learn more about analytics in manufacturing, feel free to read our in-depth article about the top 10 manufacturing analytics use cases.";Press 
+https://research.aimultiple.com/manufacturing-ai/;"6. Quality assurance
+Quality assurance is the maintenance of a desired level of quality in a service or product. Assembly lines are data-driven, interconnected, and autonomous networks. These assembly lines work based on a set of parameters and algorithms that provide guidelines to produce the best possible end-products. AI systems can detect the differences from the usual outputs by using machine vision technology since most defects are visible. When an end-product is of lower quality than expected, AI systems trigger an alert to users so that they can react to make adjustments";Press 
+https://research.aimultiple.com/manufacturing-ai/;"7. Inventory management
+Machine learning solutions can promote inventory planning activities as they are good at dealing with demand forecasting and supply planning.  AI-powered demand forecasting tools provide more accurate results than traditional demand forecasting methods (ARIMA, exponential smoothing, etc) engineers use in manufacturing facilities. These tools enable businesses to manage inventory levels better so that cash-in-stock and out-of-stock scenarios are less likely to happen.";Press 
+https://research.aimultiple.com/manufacturing-ai/;"Process optimization
+AI-powered software can help organizations optimize processes to achieve sustainable production levels. Manufacturers can prefer AI-powered process mining tools to identify and eliminate bottlenecks in the organization’s processes. For instance, timely and accurate delivery to a customer is the ultimate goal in the manufacturing industry. However, if the company has several factories in different regions, building a consistent delivery system is difficult.
+
+By using a process mining tool, manufacturers can compare the performance of different regions down to individual process steps, including duration, cost, and the person performing the step. These insights help streamline processes and identify bottlenecks so that manufacturers can take action.";Press 
+https://research.aimultiple.com/manufacturing-ai/;"9. AI-Powered digital twin use cases
+A digital twin is a virtual representation of a real-world product or asset. By combining AI techniques with digital twins, manufacturers can improve their understanding of the product and allow businesses to experiment in future actions that may enhance asset performance. There are typically 4 applications of digital twins in manufacturing:";Press 
+https://research.aimultiple.com/manufacturing-ai/;"10. Product development
+Manufacturers can use digital twins before a product’s physical counterpart is manufactured. This application enables businesses to collect data from the virtual twin and improve the original product based on data.";Press 
+https://research.aimultiple.com/manufacturing-ai/;" Design customization
+Due to the shift toward personalization in consumer demand, manufacturers can leverage digital twins to design various permutations of the product. This allows customers to purchase the product based on performance metrics rather than its design.";Press 
+https://research.aimultiple.com/manufacturing-ai/;"Shop floor performance improvement
+A digital twin can be used to monitor and analyze the production process to identify where quality issues may occur or where the performance of the product is lower than intended.";Press 
