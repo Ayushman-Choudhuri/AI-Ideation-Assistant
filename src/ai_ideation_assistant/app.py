@@ -106,7 +106,7 @@ def main():
         #st.session_state.generated.append(output["generated_text"])
         st.session_state.generated.append(output_text)
 
-    st.write("length: " + str(len(st.session_state['generated'])))
+    #st.write("length: " + str(len(st.session_state['generated'])))
 
 
     # Start
