@@ -1,12 +1,12 @@
-import requests
-import webbrowser
 import openai
 import subprocess
+import os
+from dotenv import load_dotenv
 
-# Set OpenAI API endpoint and API key
-#openai_endpoint = "https://api.openai.com/v1/engines/davinci-codex/completions"
+# Load environment variables from .env file
+load_dotenv()
 
-openai.api_key= "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"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 def generate_flowchart(input_text):
