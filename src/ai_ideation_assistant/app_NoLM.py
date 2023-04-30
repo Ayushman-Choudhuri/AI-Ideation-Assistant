@@ -82,6 +82,8 @@ def main():
 
     st.header("Ideation AI Assistant")
 
+    st.button("Reset Ideation")
+
     cached_messages = []
 
     # cached_messages, response = initialize_LM(cached_messages)
@@ -98,6 +100,7 @@ def main():
         # st.sidebar.info("AI Assistant")
         # st.sidebar.info("About Us")
         # st.sidebar.text_input("","")
+        # st.button("Reset Ideation")
 
 
     with st.expander("", expanded=True):
