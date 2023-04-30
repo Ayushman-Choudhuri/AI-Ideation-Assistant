@@ -9,14 +9,10 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def generate_flowchart(input_text):
     prompt = f"Represent this text in a latex flowchart with only the keypoints mentioned in the flowchart. \
-               Use the tikz and xcolor package. draw a rectangular block around each block and the total diagram  \
-               Output needs to be only in one page\
+               Use the tikz and xcolor package. draw a rectangular block around each block  \
                Only show the code.:  \n\n{input_text}"
     
-    #Exprimental Prompts 
-    #Space the flowchart elements evenly . If there exists a feedback loop process such as refining, feedback , etc add the correct loop in the digram \
-    #The close loop arrow needs to be the same thickness as the other arrow. \
-    #Use only 90 degree bends on arrows\
+    #Output needs to be only in one page\
 
     request = {"role": "system", "content": prompt}    
     response = openai.ChatCompletion.create(model="gpt-3.5-turbo", max_tokens = 520, messages=[request])
@@ -34,17 +30,18 @@ def latex_to_pdf(latex_file_path):
 ########################################### test ##########################################3###
 
 #Import a test chat gpt output
-with open('./gpt-sample-outputs/gpt_output_sample_3.txt', 'r') as file:
+with open('./gpt-sample-outputs/tmp.txt', 'r') as file:
     input_text = file.read()
 
 ## Generate a latex code from the gpt prompt
-output = generate_flowchart(input_text)
+output_flowchart_latex = generate_flowchart(input_text)
 
 ## Generate a .tex file with the out
-with open('output_latex.tex', 'w') as f:
-    f.write(output)
+with open('output_flowchart_latex.tex', 'w') as f:
+    f.write(output_flowchart_latex)
 
-pdf_file_path = latex_to_pdf('output_latex.tex')
+pdf_file_path = latex_to_pdf('output_flowchart_latex.tex')
+
 
 
 #################################################################################################
