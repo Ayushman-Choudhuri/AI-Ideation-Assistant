@@ -12,6 +12,10 @@ from dotenv import load_dotenv
 
 # openai.api_key = os.getenv("OPENAI_API_KEY")
 
+st.set_page_config(
+        page_title="Streamlit Chat - Demo",
+        page_icon=":robot_face:"
+    )
 
 INITIAL_INSTRUCTOR_PROMPT = 'Consider the following scenario: you are helping a company  \
                             identify beneficial AI use cases based on some domain-specific \
@@ -75,12 +79,8 @@ def load_cache(cached_messages):
     return cached_messages
 
 def main():
-    st.set_page_config(
-        page_title="Streamlit Chat - Demo",
-        page_icon=":robot:"
-    )
 
-    st.header("Streamlit Chat - Demo")
+    st.header("Ideation AI Assistant")
 
     cached_messages = []
 
@@ -93,33 +93,53 @@ def main():
     if 'past' not in st.session_state:
         st.session_state['past'] = ['Start of the Conversation']
 
-    user_input = get_text()
-
-    if user_input:
-
-        # msg = set_message(user_input, role="user")
-        # cached_messages = load_cache(cached_messages)
-
-        # cached_messages, output = query_LM(msg, cached_messages)
-        # output_text = output['choices'][0]['message']['content']
-
-        output_text = 'Test'
-
-        st.session_state.past.append(user_input)
-        #st.session_state.generated.append(output["generated_text"])
-        st.session_state.generated.append(output_text)
-
-    #st.write("length: " + str(len(st.session_state['generated'])))
+    with st.sidebar:
+        st.sidebar.image("https://www.appliedai.de/assets/static/aai-logo.png", use_column_width=True)
+        # st.sidebar.info("AI Assistant")
+        # st.sidebar.info("About Us")
+        # st.sidebar.text_input("","")
 
 
-    # Start
-    if st.session_state['generated']:
-        
-        for i in range(len(st.session_state['generated'])-1, -1, -1):
-            message(st.session_state["generated"][i], key=str(i))
-            message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
-            
+    with st.expander("", expanded=True):
+    # with st.container():
 
+        user_input = get_text()
+
+        if user_input:
+
+            # msg = set_message(user_input, role="user")
+            # cached_messages = load_cache(cached_messages)
+
+            # cached_messages, output = query_LM(msg, cached_messages)
+            # output_text = output['choices'][0]['message']['content']
+
+            output_text = 'Response'
+
+            st.session_state.past.append(user_input)
+            #st.session_state.generated.append(output["generated_text"])
+            st.session_state.generated.append(output_text)
+
+        #st.write("length: " + str(len(st.session_state['generated'])))
+
+        # Start
+        if st.session_state['generated']:
+
+            for i in range(len(st.session_state['generated']) - 1, -1, -1):
+                message(st.session_state["generated"][i], key=str(i))
+                message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
+
+    # with st.sidebar:
+    #     st.sidebar.image("https://www.appliedai.de/assets/static/aai-logo.png", use_column_width=True)
+    #     # st.sidebar.info("AI Assistant")
+    #     # st.sidebar.info("About Us")
+
+    hide_default_format = """
+           <style>
+           #MainMenu {visibility: hidden; }
+           footer {visibility: hidden;}
+           </style>
+           """
+    st.markdown(hide_default_format, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
