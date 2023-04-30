@@ -22,6 +22,7 @@ INITIAL_INSTRUCTOR_PROMPT = 'Consider the following scenario: you are helping a 
                             inputs they provide you. You have to be the one to start the \
                             conversation, the user will follow your instructions. \
                             Start by greeting the customer. \
+                            Do not indulge in extensively explaining the solution. \
                             Ask questions until you feel confident in giving a complete scenario \
                             and use case descriptions. \
                             Also, try to be as concise as possible and explore the problem step by step. \
@@ -125,6 +126,10 @@ def main():
     if 'past' not in st.session_state:
         st.session_state['past'] = ['Start of the Conversation']
 
+    with st.sidebar:
+        st.sidebar.image("https://www.appliedai.de/assets/static/aai-logo.png", use_column_width=True)
+
+
     user_input = get_text()
 
     if user_input:
@@ -171,6 +176,21 @@ def main():
         final_text = response['choices'][0]['message']['content']
 
         st.write(final_text)
+
+        with open("summary.txt", "w") as text_file:
+            text_file.write(final_text)
+
+        file = '/Users/andreasbinder/Documents/NLP/acl2022-zerofewshot-tutorial.pdf'
+        import base64
+        # Opening file from file path
+        with open(file, "rb") as f:
+            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+
+        # Embedding PDF in HTML
+        #pdf_display = F'<embed src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf">'
+        pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'
+        # Displaying File
+        st.markdown(pdf_display, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
