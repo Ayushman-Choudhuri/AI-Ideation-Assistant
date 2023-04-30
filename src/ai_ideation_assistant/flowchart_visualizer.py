@@ -3,11 +3,10 @@ import subprocess
 import os
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
 load_dotenv()
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
+#openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = "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"
 
 def generate_flowchart(input_text):
     prompt = f"Represent this text in a latex flowchart with only the keypoints mentioned in the flowchart. Use the tikz and xcolor package. draw a rectangular block around each block and the total diagram.Space the flowchart elements evenly .Only show the code.:  \n\n{input_text}"
