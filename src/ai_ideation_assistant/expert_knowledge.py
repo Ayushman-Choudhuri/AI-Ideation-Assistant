@@ -21,11 +21,9 @@ def get_embedding(text, model="text-embedding-ada-002"):
     text = text.replace("\n", " ")
     return openai.Embedding.create(input = [text], model=model)['data'][0]['embedding']
 
-def main(path='../../data/Makeathon-Database2.0.xlsx'):
+def retrieve(query, path='../../data/Makeathon-Database2.0.xlsx', top_k=5):
     
     df_raw = pd.read_excel(path)  
-
-    top_k = 5
 
     df_raw = df_raw.dropna(subset=['Summary'])
     df_raw = df_raw.reset_index(drop=True)
@@ -40,7 +38,7 @@ def main(path='../../data/Makeathon-Database2.0.xlsx'):
 
     relevant_summaries = [df_raw['Summary'].loc[index] for index in indices]
 
-    print(relevant_summaries)
+    return relevant_summaries
 
 
 if __name__ == "__main__":
@@ -48,4 +46,4 @@ if __name__ == "__main__":
     #path = '/Users/andreasbinder/Downloads/Makeathon-Database2.0.xlsx'
     path = '../../data/Makeathon-Database2.0.xlsx'
     
-    main(path)
+    retrieve(path)

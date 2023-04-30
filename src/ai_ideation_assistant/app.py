@@ -4,6 +4,8 @@ import requests
 
 from utils import summarize_LM
 
+from expert_knowledge import retrieve
+
 import os
 
 import openai
@@ -22,14 +24,34 @@ INITIAL_INSTRUCTOR_PROMPT = 'Consider the following scenario: you are helping a 
                             Start by greeting the customer. \
                             Ask questions until you feel confident in giving a complete scenario \
                             and use case descriptions. \
-                            Also, try to be as concise as possible and explore the problem step by step \
+                            Also, try to be as concise as possible and explore the problem step by step. \
+                            Do not go over 70 tokens for your questioning. \
                             ' 
+            
 
 INITIAL_RESPONSE = 'Hello! Thank you for reaching out to us for help in identifying  \
                     beneficial AI use cases. Can you tell me more about your company \
                     and the industry you operate in? '
 
 INITIAL_MAX_TOKENS = 40
+
+PATH_DATABASE= '/Users/andreasbinder/Downloads/Makeathon-Database2.0.xlsx'
+
+FINAL_INSTRUCTOR_PROMPT = lambda summary, additional: f'You are given some history between a user and a chatbot where the \
+                            former wants to find out how AI can be used for use cases inside \
+                            their company. In addition, you obtain summary snippets relevant \
+                            to the current use case. Please write out a two paragraph solution \
+                            for the client. \
+                            \
+                            Here comes the summary of the chat: \
+                            {summary} \
+                            \
+                            Here is some additional information: \
+                            {additional} \
+                            \
+                            Structure the summary based on the problem and the findings. \
+                            Output the solution in a step-by-step format. \
+                            ' 
 
 @st.cache_data
 def initialize_LM(cached_messages):
@@ -75,12 +97,13 @@ def load_cache(cached_messages):
 
 
 def main():
+    
     st.set_page_config(
-        page_title="Streamlit Chat - Demo",
+        page_title="Applied AI - Smart",
         page_icon=":robot:"
     )
 
-    st.header("Streamlit Chat - Demo")
+    st.header("Applied AI - Smart")
 
     cached_messages = []
 
@@ -93,7 +116,7 @@ def main():
     out_msg = set_message(output_text, role="assistant")
     cached_messages.append(out_msg)
 
-    st.write(cached_messages)
+    #st.write(cached_messages)
 
     # TODO add first instructor prompt
     if 'generated' not in st.session_state:
@@ -130,12 +153,24 @@ def main():
             
 
     if st.button('Create Summary'):
-        st.write(cached_messages)
+        #st.write(cached_messages)
 
         cached_messages, response = summarize_LM(cached_messages=cached_messages)
         response_text = response['choices'][0]['message']['content']
-        st.write(response_text)
+        
+        relevant_summaries = retrieve(query=response_text, top_k=3, path=PATH_DATABASE)
 
+        final_request = FINAL_INSTRUCTOR_PROMPT(response_text, relevant_summaries)
+
+        msg = set_message(final_request, role="system")
+        response = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo",
+                #max_tokens = INITIAL_MAX_TOKENS,
+                messages=[msg]
+            )
+        final_text = response['choices'][0]['message']['content']
+
+        st.write(final_text)
 
 if __name__ == "__main__":
     main()
