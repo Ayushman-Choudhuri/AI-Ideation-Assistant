@@ -2,6 +2,8 @@ import streamlit as st
 from streamlit_chat import message
 import requests
 
+from utils import summarize_LM
+
 import os
 
 import openai
@@ -29,7 +31,7 @@ INITIAL_RESPONSE = 'Hello! Thank you for reaching out to us for help in identify
 
 INITIAL_MAX_TOKENS = 40
 
-
+@st.cache_data
 def initialize_LM(cached_messages):
 
     initial_instructor_message = set_message(INITIAL_INSTRUCTOR_PROMPT, role="system")
@@ -55,9 +57,6 @@ def query_LM(message, cached_messages):
 def set_message(message, role):
     return {"role": role, "content": message}
 
-def set_user_message(message):
-    return {"role": "user", "content": message}
-
 def get_text():
     input_text = st.text_input("You: ","", key="input")
     return input_text 
@@ -73,6 +72,8 @@ def load_cache(cached_messages):
         
     return cached_messages
 
+
+
 def main():
     st.set_page_config(
         page_title="Streamlit Chat - Demo",
@@ -83,7 +84,16 @@ def main():
 
     cached_messages = []
 
+    # TODO add first instructor prompt
+    # if 'initial' not in st.session_state:
+    #     st.session_state['initial'] = True
+
     cached_messages, response = initialize_LM(cached_messages)
+    output_text = response['choices'][0]['message']['content']
+    out_msg = set_message(output_text, role="assistant")
+    cached_messages.append(out_msg)
+
+    st.write(cached_messages)
 
     # TODO add first instructor prompt
     if 'generated' not in st.session_state:
@@ -97,10 +107,12 @@ def main():
     if user_input:
 
         msg = set_message(user_input, role="user")
-        cached_messages = load_cache(cached_messages)
+        #cached_messages = load_cache(cached_messages)
 
         cached_messages, output = query_LM(msg, cached_messages)
         output_text = output['choices'][0]['message']['content']
+        out_msg = set_message(output_text, role="assistant")
+        cached_messages.append(out_msg)
 
         st.session_state.past.append(user_input)
         #st.session_state.generated.append(output["generated_text"])
@@ -116,6 +128,13 @@ def main():
             message(st.session_state["generated"][i], key=str(i))
             message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
             
+
+    if st.button('Create Summary'):
+        st.write(cached_messages)
+
+        cached_messages, response = summarize_LM(cached_messages=cached_messages)
+        response_text = response['choices'][0]['message']['content']
+        st.write(response_text)
 
 
 if __name__ == "__main__":
