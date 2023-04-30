@@ -29,18 +29,18 @@ def latex_to_pdf(latex_file_path):
 
 ########################################### test ##########################################3###
 
-#Import a test chat gpt output
-with open('summary.txt', 'r') as file:
-    input_text = file.read()
+# #Import a test chat gpt output
+# with open('summary.txt', 'r') as file:
+#     input_text = file.read()
 
-## Generate a latex code from the gpt prompt
-output_flowchart_latex = generate_flowchart(input_text)
+# ## Generate a latex code from the gpt prompt
+# output_flowchart_latex = generate_flowchart(input_text)
 
-## Generate a .tex file with the out
-with open('output_flowchart_latex.tex', 'w') as f:
-    f.write(output_flowchart_latex)
+# ## Generate a .tex file with the out
+# with open('output_flowchart_latex.tex', 'w') as f:
+#     f.write(output_flowchart_latex)
 
-pdf_file_path = latex_to_pdf('output_flowchart_latex.tex')
+# pdf_file_path = latex_to_pdf('output_flowchart_latex.tex')
 
 
 

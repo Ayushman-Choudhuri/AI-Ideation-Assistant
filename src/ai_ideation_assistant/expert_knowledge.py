@@ -21,7 +21,7 @@ def get_embedding(text, model="text-embedding-ada-002"):
     text = text.replace("\n", " ")
     return openai.Embedding.create(input = [text], model=model)['data'][0]['embedding']
 
-def retrieve(query, path='../../data/Makeathon-Database2.0.xlsx', top_k=5):
+def retrieve(query, path='/home/ayushman/Projects/TUM AI/AI-Ideation-Assistant/data/Makeathon-Database2.0.xlsx', top_k=5):
     
     df_raw = pd.read_excel(path)  
 
@@ -44,6 +44,8 @@ def retrieve(query, path='../../data/Makeathon-Database2.0.xlsx', top_k=5):
 if __name__ == "__main__":
 
     #path = '/Users/andreasbinder/Downloads/Makeathon-Database2.0.xlsx'
-    path = '../../data/Makeathon-Database2.0.xlsx'
+    #path = '../../data/Makeathon-Database2.0.xlsx'
     
-    retrieve(path)
+    #retrieve(path)
+
+    pass

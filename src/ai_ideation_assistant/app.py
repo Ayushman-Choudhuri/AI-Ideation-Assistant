@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit_chat import message
 import requests
+from flowchart_visualizer import generate_flowchart , latex_to_pdf
 
 from utils import summarize_LM
 
@@ -36,7 +37,7 @@ INITIAL_RESPONSE = 'Hello! Thank you for reaching out to us for help in identify
 
 INITIAL_MAX_TOKENS = 40
 
-PATH_DATABASE= '/Users/andreasbinder/Downloads/Makeathon-Database2.0.xlsx'
+PATH_DATABASE= '/home/ayushman/Projects/TUM AI/AI-Ideation-Assistant/data/Makeathon-Database2.0.xlsx'
 
 FINAL_INSTRUCTOR_PROMPT = lambda summary, additional: f'You are given some history between a user and a chatbot where the \
                             former wants to find out how AI can be used for use cases inside \
@@ -100,11 +101,11 @@ def load_cache(cached_messages):
 def main():
     
     st.set_page_config(
-        page_title="Applied AI - Smart",
+        page_title="Sokrates",
         page_icon=":robot:"
     )
 
-    st.header("Applied AI - Smart")
+    st.header("Sokrates")
 
     cached_messages = []
 
@@ -177,10 +178,23 @@ def main():
 
         st.write(final_text)
 
+  
         with open("summary.txt", "w") as text_file:
             text_file.write(final_text)
 
-        file = '/Users/andreasbinder/Documents/NLP/acl2022-zerofewshot-tutorial.pdf'
+        with open('summary.txt', 'r') as file:
+            input_text = file.read()
+
+        output_flowchart_latex = generate_flowchart(input_text)
+
+        ## Generate a .tex file with the out
+        with open('output_flowchart_latex.tex', 'w') as f:
+            f.write(output_flowchart_latex)
+
+        pdf_file_path = latex_to_pdf('./output_flowchart_latex.tex')
+
+
+        file = '/home/ayushman/Projects/TUM AI/AI-Ideation-Assistant/src/ai_ideation_assistant/output_flowchart_latex.pdf'
         import base64
         # Opening file from file path
         with open(file, "rb") as f:
