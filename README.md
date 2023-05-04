@@ -16,7 +16,9 @@ This prototype was made during the TUM AI Makeathon held at the Technical Univer
 
 ## Design
 
-<img src="images/sokrates_design.jpg" alt="Sokrates Design">
+<p align="center">
+<img src="Images/sokrates_design.jpg" alt="Sokrates Design">
+</p>
 
 The design contains the following modules: 
 
