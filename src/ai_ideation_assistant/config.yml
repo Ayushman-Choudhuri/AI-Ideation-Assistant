@@ -1,0 +1,33 @@
+sokrates: 
+
+ app:
+  page_title: 'Sokrates'
+  page_icon: ":robot:"
+  sidebar_image_link: 'https://www.appliedai.de/assets/static/aai-logo.png'
+
+  initial_instructor_prompt : 'Consider the following scenario: you are helping a company  \
+                               identify beneficial AI use cases based on some domain-specific \
+                               inputs they provide you. You have to be the one to start the \
+                               conversation, the user will follow your instructions. \
+                               Start by greeting the customer. \
+                               Do not indulge in extensively explaining the solution. \
+                               Ask questions until you feel confident in giving a complete scenario \
+                               and use case descriptions. \
+                               Also, try to be as concise as possible and explore the problem step by step. \
+                               Do not go over 70 tokens for your questioning. \'
+  
+  initial_response : 'Hello! Thank you for reaching out to us for help in identifying  \
+                      beneficial AI use cases. Can you tell me more about your company \
+                      and the industry you operate in? '
+  intial_max_tokens : 40
+  database_path : '/home/ayushman/Projects/TUM AI/AI-Ideation-Assistant/data/Makeathon-Database2.0.xlsx'
+  latex_output_file_path : './output_flowchart_latex.tex'
+  pdf_output_file_path: '/home/ayushman/Projects/TUM AI/AI-Ideation-Assistant/src/ai_ideation_assistant/output_flowchart_latex.pdf'
+ 
+ flowchart_visualizer:
+  gpt_model: "gpt-3.5-turbo"
+  max_response_token : 520
+
+ expert_knowledge: 
+  database_path : '/home/ayushman/Projects/TUM AI/AI-Ideation-Assistant/data/Makeathon-Database2.0.xlsx'  
+  top_k_results: 5
