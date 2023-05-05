@@ -63,6 +63,13 @@ pip install -r requirements.txt
 conda list
 ```
 ## Running the Project
+To run the project run the following command after navigationg to the src/ai-ideation-assistant
+
+```bash
+streamlit run app.py
+```
+
+
 ## Contributors
 
 * Andreas Binder - TU Munich
