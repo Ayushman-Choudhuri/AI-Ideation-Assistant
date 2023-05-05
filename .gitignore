@@ -53,3 +53,8 @@ MANIFEST
 .venv*/
 .conda*/
 .python-version
+output_flowchart_latex.aux
+output_flowchart_latex.pdf
+output_flowchart_latex.tex
+summary.txt
+.gitignore

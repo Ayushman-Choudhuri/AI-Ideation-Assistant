@@ -1,44 +1,27 @@
 import streamlit as st
 from streamlit_chat import message
-import requests
 from flowchart_visualizer import generate_flowchart , latex_to_pdf
-
 from utils import summarize_LM
-
 from expert_knowledge import retrieve
-
 import os
-
 import openai
-
+import yaml
 from dotenv import load_dotenv
+import base64
 
+# Load API Key
 load_dotenv()
-
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+# Load Configuration Parameters
+with open('config.yml' , 'r') as f:
+    config =yaml.safe_load(f)['sokrates']['app']
 
-INITIAL_INSTRUCTOR_PROMPT = 'Consider the following scenario: you are helping a company  \
-                            identify beneficial AI use cases based on some domain-specific \
-                            inputs they provide you. You have to be the one to start the \
-                            conversation, the user will follow your instructions. \
-                            Start by greeting the customer. \
-                            Do not indulge in extensively explaining the solution. \
-                            Ask questions until you feel confident in giving a complete scenario \
-                            and use case descriptions. \
-                            Also, try to be as concise as possible and explore the problem step by step. \
-                            Do not go over 70 tokens for your questioning. \
-                            ' 
-            
 
-INITIAL_RESPONSE = 'Hello! Thank you for reaching out to us for help in identifying  \
-                    beneficial AI use cases. Can you tell me more about your company \
-                    and the industry you operate in? '
-
-INITIAL_MAX_TOKENS = 40
-
-PATH_DATABASE= '/home/ayushman/Projects/TUM AI/AI-Ideation-Assistant/data/Makeathon-Database2.0.xlsx'
-
+INITIAL_INSTRUCTOR_PROMPT = config['initial_instructor_prompt']
+INITIAL_RESPONSE = config['initial_response']
+INITIAL_MAX_TOKENS = config['intial_max_tokens']
+PATH_DATABASE= config['database_path']
 FINAL_INSTRUCTOR_PROMPT = lambda summary, additional: f'You are given some history between a user and a chatbot where the \
                             former wants to find out how AI can be used for use cases inside \
                             their company. In addition, you obtain summary snippets relevant \
@@ -97,16 +80,14 @@ def load_cache(cached_messages):
     return cached_messages
 
 
-
 def main():
     
+    # Set app page parameters 
     st.set_page_config(
-        page_title="Sokrates",
-        page_icon=":robot:"
+        page_title= config['page_title'],
+        page_icon=config['page_icon']
     )
-
-    st.header("Sokrates")
-
+    st.header(config['page_title'])
     cached_messages = []
 
     # TODO add first instructor prompt
@@ -128,7 +109,7 @@ def main():
         st.session_state['past'] = ['Start of the Conversation']
 
     with st.sidebar:
-        st.sidebar.image("https://www.appliedai.de/assets/static/aai-logo.png", use_column_width=True)
+        st.sidebar.image(config['sidebar_image_link'], use_column_width=True)
 
 
     user_input = get_text()
@@ -136,18 +117,12 @@ def main():
     if user_input:
 
         msg = set_message(user_input, role="user")
-        #cached_messages = load_cache(cached_messages)
-
         cached_messages, output = query_LM(msg, cached_messages)
         output_text = output['choices'][0]['message']['content']
         out_msg = set_message(output_text, role="assistant")
         cached_messages.append(out_msg)
-
         st.session_state.past.append(user_input)
-        #st.session_state.generated.append(output["generated_text"])
         st.session_state.generated.append(output_text)
-
-    #st.write("length: " + str(len(st.session_state['generated'])))
 
 
     # Start
@@ -159,7 +134,6 @@ def main():
             
 
     if st.button('Create Summary'):
-        #st.write(cached_messages)
 
         cached_messages, response = summarize_LM(cached_messages=cached_messages)
         response_text = response['choices'][0]['message']['content']
@@ -178,7 +152,8 @@ def main():
 
         st.write(final_text)
 
-  
+        ## Generation of final report
+
         with open("summary.txt", "w") as text_file:
             text_file.write(final_text)
 
@@ -191,20 +166,17 @@ def main():
         with open('output_flowchart_latex.tex', 'w') as f:
             f.write(output_flowchart_latex)
 
-        pdf_file_path = latex_to_pdf('./output_flowchart_latex.tex')
+        ## Generate a pdf from the .tex output file
+        pdf_file_path = latex_to_pdf(config['latex_output_file_path'])
 
-
-        file = '/home/ayushman/Projects/TUM AI/AI-Ideation-Assistant/src/ai_ideation_assistant/output_flowchart_latex.pdf'
-        import base64
         # Opening file from file path
-        with open(file, "rb") as f:
+        with open(config['pdf_output_file_path'], "rb") as f:
             base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-
         # Embedding PDF in HTML
-        #pdf_display = F'<embed src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf">'
         pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'
-        # Displaying File
+        # Display File
         st.markdown(pdf_display, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
+
