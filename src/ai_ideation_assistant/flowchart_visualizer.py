@@ -13,6 +13,11 @@ with open('config.yml' , 'r') as f:
     config =yaml.safe_load(f)['sokrates']['flowchart_visualizer']
 
 def generate_flowchart(input_text):
+    
+    """
+    Generates a LaTeX flowchart code from the input text using the OpenAI GPT-3.5 model.
+    """
+    
     prompt = f"Represent this text in a latex flowchart with only the keypoints mentioned in the flowchart. \
                Use the tikz and xcolor package. draw a rectangular block around each block  \
                Only show the code.:  \n\n{input_text}"
@@ -24,6 +29,9 @@ def generate_flowchart(input_text):
     return response['choices'][0]['message']['content']
         
 def latex_to_pdf(latex_file_path):
+    """
+    Compiles a LaTeX file to a PDF file using pdflatex.
+    """
     # Compile the LaTeX file to a PDF file
     pdf_file_path = os.path.splitext(latex_file_path)[0] + '.pdf'
     subprocess.run(['pdflatex', '-interaction=nonstopmode', latex_file_path], check=True)
