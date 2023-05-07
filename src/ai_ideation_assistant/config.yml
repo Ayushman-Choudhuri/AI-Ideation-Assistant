@@ -1,5 +1,10 @@
 sokrates: 
 
+ path: 
+  database_path : '/home/ayushman/Projects/TUM AI/AI-Ideation-Assistant/data/Makeathon-Database2.0.xlsx'
+  pdf_output_file_path: '/home/ayushman/Projects/TUM AI/AI-Ideation-Assistant/src/ai_ideation_assistant/output_flowchart_latex.pdf'
+  latex_output_file_path : './output_flowchart_latex.tex'
+
  app:
   page_title: 'Sokrates'
   page_icon: ":robot:"
@@ -20,14 +25,10 @@ sokrates:
                       beneficial AI use cases. Can you tell me more about your company \
                       and the industry you operate in? '
   intial_max_tokens : 40
-  database_path : '/home/ayushman/Projects/TUM AI/AI-Ideation-Assistant/data/Makeathon-Database2.0.xlsx'
-  latex_output_file_path : './output_flowchart_latex.tex'
-  pdf_output_file_path: '/home/ayushman/Projects/TUM AI/AI-Ideation-Assistant/src/ai_ideation_assistant/output_flowchart_latex.pdf'
- 
+
  flowchart_visualizer:
   gpt_model: "gpt-3.5-turbo"
   max_response_token : 520
 
  expert_knowledge: 
-  database_path : '/home/ayushman/Projects/TUM AI/AI-Ideation-Assistant/data/Makeathon-Database2.0.xlsx'  
   top_k_results: 5

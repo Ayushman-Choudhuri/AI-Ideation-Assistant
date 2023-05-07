@@ -10,8 +10,12 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Load Configuration Parameters
-with open('config.yml' , 'r') as f:
-    config =yaml.safe_load(f)['sokrates']['app']
+with open('config.yml', 'r') as f:
+    config = yaml.safe_load(f)
+
+config_path = config.get('sokrates', {}).get('path', '')
+config_app = config.get('sokrates', {}).get('app', '')
+
 
 class cachemessage:
 
@@ -28,13 +32,13 @@ class cachemessage:
             A tuple containing the updated list of cached messages and the response from the chatbot API.
         """
         # Add initial instructor message to cached messages
-        initial_instructor_message = cachemessage.set_message(config['initial_instructor_prompt'], role="system")
+        initial_instructor_message = cachemessage.set_message(config_app['initial_instructor_prompt'], role="system")
         cached_messages.append(initial_instructor_message)
 
         # Query OpenAI chatbot API with cached messages
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
-            max_tokens = config['intial_max_tokens'],
+            max_tokens = config_app['intial_max_tokens'],
             messages=cached_messages
         )
 

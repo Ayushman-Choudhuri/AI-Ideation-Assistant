@@ -12,9 +12,11 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Import configuration parameters from config.yml
-with open('config.yml' , 'r') as f:
-    config =yaml.safe_load(f)['sokrates']['expert_knowledge']
 
+with open('config.yml', 'r') as f:
+    config = yaml.safe_load(f)
+    config_path = config.get('sokrates', {}).get('path', '')
+    config_exp_knw = config.get('sokrates', {}).get('expert_knowledge', {})
 
 def cosine_similarity(query, target):
     """
@@ -53,7 +55,7 @@ def get_embedding(text, model="text-embedding-ada-002"):
     text = text.replace("\n", " ")
     return openai.Embedding.create(input = [text], model=model)['data'][0]['embedding']
 
-def retrieve(query, path=config['database_path'], top_k=config['top_k_results']):
+def retrieve(query, path=config_path['database_path'], top_k=config_exp_knw['top_k_results']):
     """
     Retrieve the most relevant summary text(s) from the database for the given query.
 

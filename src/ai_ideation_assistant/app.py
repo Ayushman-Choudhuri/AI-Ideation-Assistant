@@ -15,10 +15,12 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Load Configuration Parameters
-with open('config.yml' , 'r') as f:
-    config =yaml.safe_load(f)['sokrates']['app']
+with open('config.yml', 'r') as f:
+    config = yaml.safe_load(f)
 
-PATH_DATABASE= config['database_path']
+config_path = config.get('sokrates', {}).get('path', '')
+config_app = config.get('sokrates', {}).get('app', '')
+
 FINAL_INSTRUCTOR_PROMPT = lambda summary, additional: f'You are given some history between a user and a chatbot where the \
                             former wants to find out how AI can be used for use cases inside \
                             their company. In addition, you obtain summary snippets relevant \
@@ -39,10 +41,10 @@ def main():
     
     # Set app page parameters 
     st.set_page_config(
-        page_title= config['page_title'],
-        page_icon=config['page_icon']
+        page_title= config_app['page_title'],
+        page_icon=config_app['page_icon']
     )
-    st.header(config['page_title'])
+    st.header(config_app['page_title'])
     cached_messages = []
 
     # TODO add first instructor prompt
@@ -64,7 +66,7 @@ def main():
         st.session_state['past'] = ['Start of the Conversation']
 
     with st.sidebar:
-        st.sidebar.image(config['sidebar_image_link'], use_column_width=True)
+        st.sidebar.image(config_app['sidebar_image_link'], use_column_width=True)
 
 
     user_input = cachemessage.get_text()
@@ -93,7 +95,7 @@ def main():
         cached_messages, response = summarize_LM(cached_messages=cached_messages)
         response_text = response['choices'][0]['message']['content']
         
-        relevant_summaries = retrieve(query=response_text, top_k=3, path=PATH_DATABASE)
+        relevant_summaries = retrieve(query=response_text, top_k=3, path=config_path['databse_path'])
 
         final_request = FINAL_INSTRUCTOR_PROMPT(response_text, relevant_summaries)
 
@@ -121,10 +123,10 @@ def main():
             f.write(output_flowchart_latex)
 
         ## Generate a pdf from the .tex output file
-        pdf_file_path = latex_to_pdf(config['latex_output_file_path'])
+        pdf_file_path = latex_to_pdf(config_path['latex_output_file_path'])
 
         # Opening file from file path
-        with open(config['pdf_output_file_path'], "rb") as f:
+        with open(config_path['pdf_output_file_path'], "rb") as f:
             base64_pdf = base64.b64encode(f.read()).decode('utf-8')
         # Embedding PDF in HTML
         pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'
