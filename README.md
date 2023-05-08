@@ -77,14 +77,6 @@ The design contains the following modules:
   ```bash
   streamlit run app.py
   ```
- ## User Interface and Results
- 
-<p align="center">
-  <img src="images/sokrates_ui.png" alt="Sokrates Design" width="30%">
-  <img src="images/sokrates_summary.png" alt="Sokrates Design" width="30%">
-  <img src="images/sokrates_flowchart.png" alt="Sokrates Design" width="30%">
-</p>
-
 
 ## Contributors
 
